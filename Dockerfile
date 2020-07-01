@@ -1,4 +1,4 @@
-FROM openjdk:11.0.3-jdk
+FROM openjdk:11.0.7-jdk
 
 MAINTAINER Cirrus Labs hello@cirruslabs.org;
 
