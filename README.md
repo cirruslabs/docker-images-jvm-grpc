@@ -3,7 +3,7 @@
 Contains [`grpc_health_probe` executable](https://github.com/grpc-ecosystem/grpc-health-probe) for easier health checking:
 
 ```Dockerfile
-FROM cirrusci/jvm-grpc:11
+FROM gcr.io/cirrus-ci-community/jvm-grpc:$TAG
 
 EXPOSE 8000
 
