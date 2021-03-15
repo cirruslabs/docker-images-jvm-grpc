@@ -1,4 +1,6 @@
-FROM openjdk:14-jdk
+ARG OPENJDK_TAG=15-jdk-slim
+
+FROM openjdk:$OPENJDK_TAG
 
 MAINTAINER Cirrus Labs hello@cirruslabs.org;
 
