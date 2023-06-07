@@ -1,7 +1,8 @@
 ARG OPENJDK_TAG=17-jdk-slim
-ARG TARGETARCH
 
 FROM openjdk:$OPENJDK_TAG
+
+ARG TARGETARCH
 
 MAINTAINER Cirrus Labs hello@cirruslabs.org;
 LABEL org.opencontainers.image.source=https://github.com/cirruslabs/docker-images-jvm-grpc/
