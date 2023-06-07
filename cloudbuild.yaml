@@ -1,5 +1,0 @@
-steps:
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '--build-arg', 'OPENJDK_TAG=$TAG_NAME', '-t', 'gcr.io/cirrus-ci-community/jvm-grpc:$TAG_NAME', '.' ]
-timeout: 2400s
-images: [ 'gcr.io/cirrus-ci-community/jvm-grpc:$TAG_NAME' ]
