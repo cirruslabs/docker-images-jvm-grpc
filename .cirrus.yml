@@ -10,7 +10,7 @@ docker_builder:
     - docker buildx use multibuilder
     - docker buildx inspect --bootstrap
   deploy_script: |
-    docker buildx build --build-agrs OPENJDK_TAG=$TAG_NAME \
+    docker buildx build --build-arg OPENJDK_TAG=$TAG_NAME \
       --push --platform linux/amd64,linux/arm64 \
       --tag ghcr.io/cirruslabs/jvm-grpc:$CIRRUS_TAG \
       .
