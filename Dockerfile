@@ -1,4 +1,5 @@
 ARG OPENJDK_TAG=17-jdk-slim
+ARG TARGETARCH
 
 FROM openjdk:$OPENJDK_TAG
 
