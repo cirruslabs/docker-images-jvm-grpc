@@ -1,4 +1,4 @@
-ARG OPENJDK_TAG=19-jdk-slim
+ARG OPENJDK_TAG=21-jdk-slim
 
 FROM openjdk:$OPENJDK_TAG
 
